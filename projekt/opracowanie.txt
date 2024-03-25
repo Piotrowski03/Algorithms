@@ -1,0 +1,27 @@
+Projekt zaliczeniowy z przedmioty Algorytmy i Struktury Danych.
+temat projektu: Stworzenie algorytmu tworzacego labirynt.
+
+Algorytm ktory stosuje w tym programie to recursive backtracking.
+Polega on na tym, ze wybieramy losowa komorke w naszym labiryncie,
+oznaczamy ja jako odwiedzona, i losujemy jedna z jej jeszcze nie,
+odwiedzonych sasiadow i burzymy miedzy nimi sciane.W algorytmie 
+implementujemy stos w ktorym zapisujemy komorki w ktorych juz bylismy.
+Jezeli w obecnej komorce nie ma juz nowych nieodwiedzonych sasiadow, cofamy
+sie wykorzystujac stos.
+
+aby uruchomic program nalezy uzyc komendy make run1
+
+Klasy i metody w moim programie:
+Klasa Cell opisuje strukture komorki
+zawiera(5 zmiennych definiujace sciany komorki i stan ktory opisuje czy dana komorka zostala odwiedzona)
+
+Klasa Maze opisuje sposob tworzenia jak i tworzy labirynt, ma w sobie metody takie jak:
+destroywalls- metoda ktora porownuje przemieszczenie i burzy odpowiednie sciany
+getneighbors- metoda zwraca wektor w ktorym znajduja sie wszyscy nieodwiedzeni sasiedzi danej komorki.
+mark - zaznacza komorke jako odwiedzona.
+addStack - dodaje komorke na stos
+generateMaze - metoda odpowiedzialna za utworzenie jak i przedstawienie graficzne labiryntu
+
+zrodlo:
+https://www.youtube.com/watch?v=D8UgRyRnvXU&t=65s
+w minucie 1 odcinka pokazany jest pseudokod na ktorym sie bazowalem
